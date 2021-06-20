@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('/images/coffee-bg.jpg');
+    background-size: 100%;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70px auto;
+    grid-template-areas: 
+        "nav-container"
+        "container";
+
+    gap: 50px;
+}
+.nav-container {
+
+    grid-area: "nav-container";
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.title-font h1{
+    text-transform: uppercase;
+    font-family: "Viaoda Libre";
+    font-weight: bolder;
+    font-size: 4rem;
+    padding-left: 5px;
+    /* background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%); */
+    color: #fff;
+
+
+}
+
+.title {
+    position: relative;
+    display: flex;
+    right: 80px;
+    align-items: center;
+    
+}
+
+.coffee {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -4px;
+}
+
+.options {
+    display: flex;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: "Viaoda Libre";
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 20%;
+}
+
+.links {
+    margin: 30px;
+    color: rgb(139,69,19)
+}
+
+
+li {
+    list-style: none;
+}
+
+.nav-container a:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.container {
+    grid-area: container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    
+}
+
+.content-container {
+    border-radius: 30px;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4343435b, #00000073);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343a9, #000000dc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    box-shadow: 0 5px 5px black;
+
+
+    
+}
+
+.coffee-svg {
+    height: 150px;
+    width: 150px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(156deg) brightness(100%) contrast(103%);
+    position: relative;
+    top: 10px;
+}
+
+.home-layout {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-info {
+    color:white;
+    font-family: "Lato";
+    font-size: 3rem;
+    position: relative;
+    top: 50px;
+}
+
+.heart {
+    font-size: 5rem;
+    position: relative;
+    top: 50px;
+}
+
+
+.card-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    
+    border-radius: 20px;
+    margin: 30px;
+    box-shadow: 0px 3px 9px rgba(0,0,0,0.7);
+    transition: 200ms ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 7px 15px rgba(0,0,0,0.7);
+}
+
+.latte-image {
+    width: 150px;
+    height: 150px;
+}
+
+.item-text {
+    text-align: center;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-family: Lato;
+}
+
+.capp-image {
+    width: 170px;
+    height: 130px;
+}
+
+
+.item-title {
+    text-align: center;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-family: Lato;
+    font-weight: bold;
+}
+
+.essp-image {
+    width: 140px;
+
+}
+
+
+.ameri-image {
+    width: 140px;
+}
+
+.contact{
+    margin: 50px;
+    text-align: center;
+    color:white;
+    font-size: 1.5rem;
+    font-family: Lato;
+    
+}
+
+.email {
+    padding: 5px;
+}
+
+.address {
+    padding: 5px;
+}
+
+.phone {
+    padding: 5px;
+}
+
